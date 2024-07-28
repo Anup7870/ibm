@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+}
+.hero{
+    background: url(../images/hero.png) no-repeat center center/cover;
+    height: 80vh;
+   
+}
+.overlay{
+    height: 100%;
+    padding: 0 4rem;
+    
+}
+
+.header{
+    width: 100%;
+    position: relative;
+
+}
+.header .nav{
+    /* position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0; */
+     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2rem 2rem;
+    left: 0px; 
+    top: 20px; 
+    position: absolute; 
+    mix-blend-mode: multiply;
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0.50) 0%, rgba(217, 217, 217, 0.50) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%); 
+    border-radius: 50px; 
+    backdrop-filter: blur(100px)
+}
+.subNav{
+    display: flex; 
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{{
+
+}}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+.menu ul li a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.menu ul li a:hover{
+    color: #f1f1f1;
+}
+
+.input{
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    border-radius: 20px;
+}
+.input input{
+    border: none;
+    outline: none;
+    /* color: white; */
+    padding:10px;
+    border-radius: 20px;
+}
+
+
+.sec1{
+    width: 60%;
+    height: 100%;
+    padding: 2rem 4rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-flow: column-reverse;
+
+}
+
+.sec1 h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
