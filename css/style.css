@@ -100,3 +100,20 @@
     font-weight: 600;
     margin-bottom: 1rem;
 }
+.sec1 p{
+    padding-right: 17rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.sec1 button{
+    padding: 12px 60px;
+    background-color: #36C2CE;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+}
