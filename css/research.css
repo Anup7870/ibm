@@ -24,6 +24,9 @@ section .info h1{
     font-size: 1.2rem;
     margin-left: 30px;
 }
+.feature{
+    margin-top: 30px;
+}
 .grrenCard .p{
     font-size: .8rem !important;
 }
