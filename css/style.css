@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Sora", sans-serif;
+    scroll-behavior: smooth;
 }
 .hero{
     background: url(../images/hero.png) no-repeat center center/cover;
@@ -92,7 +93,6 @@
     display: flex;
     justify-content: center;
     flex-flow: column-reverse;
-
 }
 
 .sec1 h1{
@@ -116,4 +116,132 @@
     font-weight: 500;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.explore{
+    width: 100%;
+    padding: 0 4rem;
+}
+.explore h2{
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    padding: 2rem 0;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 36px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 45%;
+    margin: 10px;
+}
+
+.card-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.card-img {
+    width: 218px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 0 40px 40px 0;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card p {
+    color: #000000;
+    margin: 15px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 15px 8px 20px;
+    background-color: #5ADBE2;
+    border: none;
+    /* color: #000000; */
+    text-decoration: none;
+    border-radius: 100px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    gap: 10px;
+}
+
+.button:hover {
+    background-color: #72c6e2;
+}
+
+.greenCard{
+    width: 100%;
+    background: #8BF9D0;
+    border-radius: 1.5rem;
+    padding: 15px 20px;
+    display: flex;
+}
+.info{
+    width: 60%;
+}
+.img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.greenCardCont{
+    margin-top: 30px;
+}
+.greenCard h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+.greenCard p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+.greenCard button{
+    margin-top: 35px;
+    padding: 12px 60px;
+    background-color: #36C2CE;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .card-img {
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 15px 15px;
+    }
 }
