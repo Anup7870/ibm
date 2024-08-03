@@ -24,10 +24,7 @@
 
 }
 .header .nav{
-    /* position: fixed;
-    top: 20px;
-    left: 0;
-    right: 0; */
+  
      width: 100%;
     display: flex;
     justify-content: space-between;
@@ -79,7 +76,7 @@
 .input input{
     border: none;
     outline: none;
-    /* color: white; */
+   
     padding:10px;
     border-radius: 20px;
 }
@@ -175,7 +172,7 @@
     padding: 8px 15px 8px 20px;
     background-color: #5ADBE2;
     border: none;
-    /* color: #000000; */
+   
     text-decoration: none;
     border-radius: 100px;
     font-weight: bold;
@@ -227,13 +224,128 @@
     border-radius: 20px;
     cursor: pointer;
 }
+.footer {
+    background-color: #d5f7f8;
+    padding: 10px;
+    color: #333;
+    margin-top: 20px;
+  }
 
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .footer-section ul li,
+  .footer-section p {
+    margin: 5px 0;
+  }
+
+  .footer-section a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+
+  .social-links a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .signup-button {
+    background-color: #5adbe2;
+    color: #000000;
+    border: 1px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 25px 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    gap: 10px;
+  }
+
+  .signup-button:hover {
+    background-color: #008c9e;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    color: #555;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      max-width: 90%;
+    }
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-section {
+      max-width: 90%;
+      text-align: center;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .footer-bottom p {
+      font-size: 0.9rem;
+    }
+  }
 
 @media (max-width: 768px) {
+    .overlay{
+        padding: 0;
+    }
+    .header .nav{
+        padding: 0 .2rem;
+    }
     .card-container {
         flex-direction: column;
     }
-
+    .menu{
+        display: none;
+    }
     .card {
         flex-direction: column;
         max-width: 100%;

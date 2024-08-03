@@ -76,3 +76,50 @@ section .info h1{
     place-items: center;
 
 }
+
+@media (max-width: 768px) {
+    .res{
+        padding: 0;
+    }
+    section .info{
+        padding: 0 .2rem;
+    }
+    section .info h1{
+        font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 5rem;
+    padding-bottom: 1.54rem;
+    }
+    .info .bold{
+        font-weight: 700;
+        font-size: .7rem;
+    }
+    .info .tag{
+        font-size: 1rem;
+    }
+    .info ul{
+        font-size: .8rem;
+        margin-left: 20px;
+    }
+    .feature{
+        margin-top: 20px;
+    }
+    .grrenCard .p{
+        font-size: .4rem !important;
+    }
+    .img img{
+        width: 240px;
+        display: none;
+    }
+    .greenCard{
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        width: 100%;
+    }
+    .mental-health-list{
+        grid-template-columns:repeat(1, 1fr);
+        padding: 0;
+    }
+}
